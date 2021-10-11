@@ -33,7 +33,7 @@ const DeleteAccountButton = () => {
 				onOk={handleDelete}
 				onCancel={handleCancel}
 				footer={[
-					<Button onClick={handleCancel}>Cancle</Button>,
+					<Button onClick={handleCancel}>Cancel</Button>,
 					<Popconfirm
 						title="Confirm Delete?"
 						onConfirm={handleDelete}
@@ -49,8 +49,9 @@ const DeleteAccountButton = () => {
 				<Avatar
 					size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}
 					src="https://lorempixel.com/400/200/sports/8/User X/"
+
 				/>
-				<p>Are you sure you want to delete your account?</p>
+				<h2>Are you sure you want to delete your account?</h2>
 			</Modal>
 		</div>
 	);

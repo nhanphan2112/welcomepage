@@ -1,5 +1,6 @@
 /* Simple button styling -- No animation */
 .simple {
+  width: 15em;
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 1px;
@@ -25,6 +26,7 @@
 
 /* Fill button styling */
 .fill {
+  width: 15em;
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 1px;
@@ -56,6 +58,7 @@
 
 /* Slide button styling */
 .slide {
+  width: 15em;
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 1px;
