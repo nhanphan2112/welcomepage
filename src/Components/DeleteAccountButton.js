@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../Styles/AntDesign.css";
-import { Button, Modal, Popconfirm, message } from "antd";
+import { Button, Modal, Popconfirm, Avatar } from "antd";
 
 const DeleteAccountButton = () => {
 	const [isModalVisible, setIsModalVisible] = useState(false);
@@ -45,6 +45,10 @@ const DeleteAccountButton = () => {
 					</Popconfirm>,
 				]}
 			>
+				<Avatar
+					size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}
+					src="https://lorempixel.com/400/200/sports/8/User X/"
+				/>
 				<p>Are you sure you want to delete your account?</p>
 			</Modal>
 		</div>

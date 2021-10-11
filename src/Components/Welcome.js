@@ -6,7 +6,7 @@ import DeleteAccountButton from "./DeleteAccountButton";
 const Welcome = () => {
 	return (
 		<div>
-			Welcome!
+			Welcome to Project Rover!
 			<EditAccountButton />
 			<DeleteAccountButton />
 			<LogoutAccountButton />
