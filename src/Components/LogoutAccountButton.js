@@ -1,6 +1,6 @@
 import React from "react";
 import "../Styles/AntDesign.css";
-import { Button } from "antd";
+import "../Styles/ButtonStyles.css"
 
 const LogoutAccountButton = () => {
 
@@ -11,9 +11,10 @@ const LogoutAccountButton = () => {
 
 	return (
 		<div>
-			<Button type="" onClick={(event) => handleOnClick(event)}>
-				Logout
-			</Button>
+			<button type="button" className="slide" onClick={(event) => handleOnClick(event)}>
+				<div>Logout</div>
+        <i className="icon-arrow-right"></i>
+			</button>
 		</div>
 	);
 };

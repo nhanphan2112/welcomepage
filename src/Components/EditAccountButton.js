@@ -1,6 +1,6 @@
 import React from "react";
 import "../Styles/AntDesign.css";
-import { Button } from "antd";
+import '../Styles/ButtonStyles.css'
 
 const EditAccountButton = () => {
 	const handleOnClick = (event) => {
@@ -10,9 +10,9 @@ const EditAccountButton = () => {
 
 	return (
 		<div>
-			<Button type="primary" onClick={(event) => handleOnClick(event)}>
+			<button type="button" className="simple" onClick={(event) => handleOnClick(event)}>
 				Edit Account
-			</Button>
+			</button>
 		</div>
 	);
 };

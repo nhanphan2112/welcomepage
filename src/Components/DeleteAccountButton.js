@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../Styles/AntDesign.css";
+import "../Styles/ButtonStyles.css";
 import { Button, Modal, Popconfirm, Avatar } from "antd";
 
 const DeleteAccountButton = () => {
@@ -21,9 +22,9 @@ const DeleteAccountButton = () => {
 
 	return (
 		<div>
-			<Button type="danger" onClick={showModal}>
+			<button type="button" className="fill" onClick={showModal}>
 				Delete Account
-			</Button>
+			</button>
 
 			<Modal
 				title="Delete Account"
