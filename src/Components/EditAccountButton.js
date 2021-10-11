@@ -3,9 +3,16 @@ import "../Styles/AntDesign.css";
 import { Button } from "antd";
 
 const EditAccountButton = () => {
+	const handleOnClick = (event) => {
+		event.preventDefault();
+		alert("Account Edited");
+	};
+
 	return (
 		<div>
-			<Button type="primary">Edit Account</Button>
+			<Button type="primary" onClick={(event) => handleOnClick(event)}>
+				Edit Account
+			</Button>
 		</div>
 	);
 };
