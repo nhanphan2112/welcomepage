@@ -1,12 +1,15 @@
 import React from "react";
-import './AntDesign.css';
-import { DatePicker } from "antd";
+// Need to comment line 3 and 4 out when complete application
+import "./Styles/AntDesign.css";
+// import { DatePicker } from "antd";
+
+import Welcome from "./Components/Welcome";
 
 function App() {
 	return (
 		<div>
-			<DatePicker />
-			App js
+			<Welcome />
+			{/* <DatePicker /> */}
 		</div>
 	);
 }
