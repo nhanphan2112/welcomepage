@@ -27,8 +27,8 @@ const DeleteAccountButton = () => {
 			</button>
 
 			<Modal
-				title="Delete Account"
-				width={800}
+				// title="Delete Account"
+				width={600}
 				visible={isModalVisible}
 				onOk={handleDelete}
 				onCancel={handleCancel}

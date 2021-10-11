@@ -1,5 +1,4 @@
 import React from "react";
-import "../Styles/AntDesign.css";
 import '../Styles/ButtonStyles.css'
 
 const EditAccountButton = () => {
