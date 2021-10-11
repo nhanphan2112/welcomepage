@@ -1,34 +1,52 @@
 import React, { useState } from "react";
 import "../Styles/AntDesign.css";
-import { Button, Modal } from "antd";
+import { Button, Modal, Popconfirm, message } from "antd";
 
 const DeleteAccountButton = () => {
 	const [isModalVisible, setIsModalVisible] = useState(false);
 
-  const showModal = () => {
-    setIsModalVisible(true);
-  };
+	const showModal = () => {
+		setIsModalVisible(true);
+	};
 
-  const handleOk = () => {
-    setIsModalVisible(false);
-  };
+	const handleDelete = () => {
+		setIsModalVisible(false);
+		// refresh page after Delete is clicked
+		window.location.reload(false);
+	};
 
-  const handleCancel = () => {
-    setIsModalVisible(false);
-  };
-
+	const handleCancel = () => {
+		setIsModalVisible(false);
+	};
 
 	return (
 		<div>
 			<Button type="danger" onClick={showModal}>
 				Delete Account
 			</Button>
-      
-      <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-      </Modal>
+
+			<Modal
+				title="Delete Account"
+				width={800}
+				visible={isModalVisible}
+				onOk={handleDelete}
+				onCancel={handleCancel}
+				footer={[
+					<Button onClick={handleCancel}>Cancle</Button>,
+					<Popconfirm
+						title="Confirm Delete?"
+						onConfirm={handleDelete}
+						onCancel={handleCancel}
+						okText="Yes"
+						okType="danger"
+						cancelText="No"
+					>
+						<Button type="danger">Delete</Button>
+					</Popconfirm>,
+				]}
+			>
+				<p>Are you sure you want to delete your account?</p>
+			</Modal>
 		</div>
 	);
 };
