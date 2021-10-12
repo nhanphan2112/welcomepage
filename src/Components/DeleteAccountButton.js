@@ -22,12 +22,12 @@ const DeleteAccountButton = () => {
 
 	return (
 		<div>
+      
 			<button type="button" className="fill" onClick={showModal}>
 				Delete Account
 			</button>
 
 			<Modal
-				// title="Delete Account"
 				width={600}
 				visible={isModalVisible}
 				onOk={handleDelete}
