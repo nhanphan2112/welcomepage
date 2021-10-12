@@ -8,7 +8,7 @@ import '../Styles/Welcome.css'
 
 const Welcome = () => {
 	return (
-		<div id="welcome">
+		<div>
 			<h1>Welcome to Project Rover!</h1>
 			<div>
 			  <EditAccountButton />
